@@ -2,67 +2,83 @@
 const arr = [
     {
         name: 'burger',
-        img: 'images/burger.jpg'
+        img: 'images/burger.jpg',
+        alt: "Burger"
     },
     {
         name: 'burger',
-        img: 'images/burger.jpg'
+        img: 'images/burger.jpg',
+        alt: "Burger"
     },
     {
         name: 'choco',
-        img: 'images/choco.jpg'
+        img: 'images/choco.jpg',
+        alt: "choco"
     },
     {
         name: 'choco',
-        img: 'images/choco.jpg'
+        img: 'images/choco.jpg',
+        alt: "choco"
     },
     {
         name: 'coffee',
-        img: 'images/coffee.jpg'
+        img: 'images/coffee.jpg',
+        alt: "coffee"
     },
     {
         name: 'coffee',
-        img: 'images/coffee.jpg'
+        img: 'images/coffee.jpg',
+        alt: "coffee"
     },
     {
         name: 'corn',
-        img: 'images/corn.jpg'
+        img: 'images/corn.jpg',
+        alt: "corn"
     },
     {
         name: 'corn',
-        img: 'images/corn.jpg'
+        img: 'images/corn.jpg',
+        alt: "corn"
     },
     {
         name: 'donut',
-        img: 'images/donut.jpg'
+        img: 'images/donut.jpg',
+        alt: "donut"
     },
     {
         name: 'donut',
-        img: 'images/donut.jpg'
+        img: 'images/donut.jpg',
+        alt: "donut"
     },
     {
         name: 'eggs',
-        img: 'images/eggs.jpg'
+        img: 'images/eggs.jpg',
+        alt: "eggs"
     },
     {
         name: 'eggs',
-        img: 'images/eggs.jpg'
+        img: 'images/eggs.jpg',
+        alt: "eggs"
     },
     {
         name: 'icecream',
-        img: 'images/icecream.jpg'
+        img: 'images/icecream.jpg',
+        alt: "ice-cream"
     },
     {
         name: 'icecream',
-        img: 'images/icecream.jpg'
+        img: 'images/icecream.jpg',
+        alt: "ice-cream"
     },
     {
         name: 'waffle',
-        img: 'images/waffle.jpg'
+        img: 'images/waffle.jpg',
+        alt: "waffle"
     },
     {
         name: 'waffle',
-        img: 'images/waffle.jpg'
+        img: 'images/waffle.jpg',
+        alt: "waffle"
     }
 ]
 
@@ -79,6 +95,7 @@ function create() {
         let card = document.createElement('img')
         card.setAttribute('src', 'images/ques.jpg');
         card.setAttribute('id', i);
+        card.setAttribute('alt', "ques-mark");
         card.style.border = ' solid black';
         card.addEventListener('click', flipcard);
         grid.appendChild(card);
@@ -91,11 +108,15 @@ function checkForMatch() {
     const two = cardChoID[1];
     if (cardCho[0] === cardCho[1]) {
         cards[one].setAttribute('src', 'images/check.jpg');
+        cards[one].setAttribute('alt', "check");
         cards[two].setAttribute('src', 'images/check.jpg');
+        cards[two].setAttribute('alt', "check");
         cardsWon.push(cardCho)
     } else {
         cards[one].setAttribute('src', 'images/ques.jpg');
+        cards[one].setAttribute('alt', "ques-mark");
         cards[two].setAttribute('src', 'images/ques.jpg');
+        cards[two].setAttribute('alt', "ques-mark");
     }
     cardChoID = [];
     cardCho = [];
@@ -109,6 +130,7 @@ function flipcard() {
     cardCho.push(arr[cardID].name);
     cardChoID.push(cardID)
     this.setAttribute('src', arr[cardID].img);
+    this.setAttribute('alt', arr[cardID].alt);
     if (cardCho.length === 2) {
         setTimeout(checkForMatch, 500)
     }
