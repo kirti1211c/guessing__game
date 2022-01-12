@@ -2,82 +2,82 @@
 const arr = [
     {
         name: 'burger',
-        img: 'images/burger.jpg',
+        img: 'https://chocolatecoveredkatie.com/wp-content/uploads/2019/08/Homemade-Veggie-Burgers-Grillable-Vegan-Gluten-Free-200x200.jpg',
         alt: "Burger"
     },
     {
         name: 'burger',
-        img: 'images/burger.jpg',
+        img: 'https://chocolatecoveredkatie.com/wp-content/uploads/2019/08/Homemade-Veggie-Burgers-Grillable-Vegan-Gluten-Free-200x200.jpg',
         alt: "Burger"
     },
     {
         name: 'choco',
-        img: 'images/choco.jpg',
+        img: 'https://cdn-japantimes.com/wp-content/uploads/2018/03/n-chocolate-a-20180309-200x200.jpg',
         alt: "choco"
     },
     {
         name: 'choco',
-        img: 'images/choco.jpg',
+        img: 'https://cdn-japantimes.com/wp-content/uploads/2018/03/n-chocolate-a-20180309-200x200.jpg',
         alt: "choco"
     },
     {
         name: 'coffee',
-        img: 'images/coffee.jpg',
+        img: 'https://faviana.com/blog/wp-content/uploads/2017/04/cup-of-coffee-200x200.jpg',
         alt: "coffee"
     },
     {
         name: 'coffee',
-        img: 'images/coffee.jpg',
+        img: 'https://faviana.com/blog/wp-content/uploads/2017/04/cup-of-coffee-200x200.jpg',
         alt: "coffee"
     },
     {
         name: 'corn',
-        img: 'images/corn.jpg',
+        img: 'https://cookinglsl.com/wp-content/uploads/2014/08/boiled-corn-on-the-cob-3-200x200.jpg',
         alt: "corn"
     },
     {
         name: 'corn',
-        img: 'images/corn.jpg',
+        img: 'https://cookinglsl.com/wp-content/uploads/2014/08/boiled-corn-on-the-cob-3-200x200.jpg',
         alt: "corn"
     },
     {
         name: 'donut',
-        img: 'images/donut.jpg',
+        img: 'https://b.zmtcdn.com/data/dish_photos/e72/edd9ac8fbc0e38f0071bc1992565ce72.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A',
         alt: "donut"
     },
     {
         name: 'donut',
-        img: 'images/donut.jpg',
+        img: 'https://b.zmtcdn.com/data/dish_photos/e72/edd9ac8fbc0e38f0071bc1992565ce72.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A',
         alt: "donut"
     },
     {
         name: 'eggs',
-        img: 'images/eggs.jpg',
+        img: 'https://www.thermofisher.com/blog/wp-content/uploads/2014/03/chicken_egg_200.jpg',
         alt: "eggs"
     },
     {
         name: 'eggs',
-        img: 'images/eggs.jpg',
+        img: 'https://www.thermofisher.com/blog/wp-content/uploads/2014/03/chicken_egg_200.jpg',
         alt: "eggs"
     },
     {
         name: 'icecream',
-        img: 'images/icecream.jpg',
+        img: 'https://chocolatecoveredkatie.com/wp-content/uploads/2018/06/Low-Carb-Ice-Cream-200x200.jpg',
         alt: "ice-cream"
     },
     {
         name: 'icecream',
-        img: 'images/icecream.jpg',
+        img: 'https://chocolatecoveredkatie.com/wp-content/uploads/2018/06/Low-Carb-Ice-Cream-200x200.jpg',
         alt: "ice-cream"
     },
     {
         name: 'waffle',
-        img: 'images/waffle.jpg',
+        img: 'https://bakingmischief.com/wp-content/uploads/2019/09/crispy-waffles-image-square-200x200.jpg',
         alt: "waffle"
     },
     {
         name: 'waffle',
-        img: 'images/waffle.jpg',
+        img: 'https://bakingmischief.com/wp-content/uploads/2019/09/crispy-waffles-image-square-200x200.jpg',
         alt: "waffle"
     }
 ]
@@ -93,7 +93,7 @@ function create() {
     console.log("hi");
     for (let i = 0; i < arr.length; i++) {
         let card = document.createElement('img')
-        card.setAttribute('src', 'images/ques.jpg');
+        card.setAttribute('src', 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Question_mark_%28black%29.svg/200px-Question_mark_%28black%29.svg.png');
         card.setAttribute('id', i);
         card.setAttribute('alt', "ques-mark");
         card.style.border = ' solid black';
@@ -107,15 +107,15 @@ function checkForMatch() {
     const one = cardChoID[0];
     const two = cardChoID[1];
     if (cardCho[0] === cardCho[1]) {
-        cards[one].setAttribute('src', 'images/check.jpg');
+        cards[one].setAttribute('src', 'https://dictionary.cambridge.org/images/thumb/check_noun_002_06440.jpg?version=5.0.203');
         cards[one].setAttribute('alt', "check");
-        cards[two].setAttribute('src', 'images/check.jpg');
+        cards[two].setAttribute('src', 'https://dictionary.cambridge.org/images/thumb/check_noun_002_06440.jpg?version=5.0.203');
         cards[two].setAttribute('alt', "check");
         cardsWon.push(cardCho)
     } else {
-        cards[one].setAttribute('src', 'images/ques.jpg');
+        cards[one].setAttribute('src', 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Question_mark_%28black%29.svg/200px-Question_mark_%28black%29.svg.png');
         cards[one].setAttribute('alt', "ques-mark");
-        cards[two].setAttribute('src', 'images/ques.jpg');
+        cards[two].setAttribute('src', 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Question_mark_%28black%29.svg/200px-Question_mark_%28black%29.svg.png');
         cards[two].setAttribute('alt', "ques-mark");
     }
     cardChoID = [];
