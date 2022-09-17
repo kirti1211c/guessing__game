@@ -22,12 +22,12 @@ const arr = [
     },
     {
         name: 'coffee',
-        img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/1200px-A_small_cup_of_coffee.JPG',
+        img: 'https://lh5.googleusercontent.com/fO_qlSHmxoD8Emjm_cNgDFYrgRD3Tz6z8_xp6m-UDIMm4CWHmIQu_Izj_QYP6ChDtoY=w2400',
         alt: "coffee"
     },
     {
         name: 'coffee',
-        img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/1200px-A_small_cup_of_coffee.JPG',
+        img: 'https://lh5.googleusercontent.com/fO_qlSHmxoD8Emjm_cNgDFYrgRD3Tz6z8_xp6m-UDIMm4CWHmIQu_Izj_QYP6ChDtoY=w2400',
         alt: "coffee"
     },
     {
