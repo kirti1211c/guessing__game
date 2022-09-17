@@ -22,12 +22,12 @@ const arr = [
     },
     {
         name: 'coffee',
-        img: 'https://faviana.com/blog/wp-content/uploads/2017/04/cup-of-coffee-200x200.jpg',
+        img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/1200px-A_small_cup_of_coffee.JPG',
         alt: "coffee"
     },
     {
         name: 'coffee',
-        img: 'https://faviana.com/blog/wp-content/uploads/2017/04/cup-of-coffee-200x200.jpg',
+        img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/1200px-A_small_cup_of_coffee.JPG',
         alt: "coffee"
     },
     {
